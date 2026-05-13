@@ -3,21 +3,21 @@
         "S": {
             "$type": "shadow",
             "$value": {
-                "color": "#00000040",
-                "offsetX": "0",
-                "offsetY": "2px",
-                "blur": "3px",
-                "spread": "0"
+                "color": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.25 },
+                "offsetX": { "value": 0, "unit": "px" },
+                "offsetY": { "value": 2, "unit": "px" },
+                "blur": { "value": 3, "unit": "px" },
+                "spread": { "value": 0, "unit": "px" }
             }
         },
         "M": {
             "$type": "shadow",
             "$value": {
-                "color": "#00000033",
-                "offsetX": "0",
-                "offsetY": "2px",
-                "blur": "6px",
-                "spread": "0"
+                "color": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.2 },
+                "offsetX": { "value": 0, "unit": "px" },
+                "offsetY": { "value": 2, "unit": "px" },
+                "blur": { "value": 6, "unit": "px" },
+                "spread": { "value": 0, "unit": "px" }
             }
         }
     }

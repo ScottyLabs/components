@@ -6,9 +6,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 600,
-                    "fontSize": "60px",
-                    "lineHeight": "72px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 60, "unit": "px" },
+                    "lineHeight": { "value": 72, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "2": {
@@ -16,9 +16,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 600,
-                    "fontSize": "45px",
-                    "lineHeight": "56px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 45, "unit": "px" },
+                    "lineHeight": { "value": 56, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             }
         },
@@ -28,9 +28,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 600,
-                    "fontSize": "36px",
-                    "lineHeight": "44px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 36, "unit": "px" },
+                    "lineHeight": { "value": 44, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "2": {
@@ -38,9 +38,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 600,
-                    "fontSize": "30px",
-                    "lineHeight": "38px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 30, "unit": "px" },
+                    "lineHeight": { "value": 38, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "3": {
@@ -48,9 +48,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 500,
-                    "fontSize": "24px",
-                    "lineHeight": "32px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 24, "unit": "px" },
+                    "lineHeight": { "value": 32, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "4": {
@@ -58,9 +58,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 500,
-                    "fontSize": "20px",
-                    "lineHeight": "28px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 20, "unit": "px" },
+                    "lineHeight": { "value": 28, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "5": {
@@ -68,9 +68,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 500,
-                    "fontSize": "18px",
-                    "lineHeight": "26px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 18, "unit": "px" },
+                    "lineHeight": { "value": 26, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "6": {
@@ -78,9 +78,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 500,
-                    "fontSize": "16px",
-                    "lineHeight": "24px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 16, "unit": "px" },
+                    "lineHeight": { "value": 24, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             }
         },
@@ -90,9 +90,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 400,
-                    "fontSize": "16px",
-                    "lineHeight": "24px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 16, "unit": "px" },
+                    "lineHeight": { "value": 24, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "2": {
@@ -100,9 +100,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 400,
-                    "fontSize": "14px",
-                    "lineHeight": "20px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 14, "unit": "px" },
+                    "lineHeight": { "value": 20, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "3": {
@@ -110,9 +110,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 400,
-                    "fontSize": "12px",
-                    "lineHeight": "16px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 12, "unit": "px" },
+                    "lineHeight": { "value": 16, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             }
         },
@@ -122,9 +122,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 600,
-                    "fontSize": "14px",
-                    "lineHeight": "20px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 14, "unit": "px" },
+                    "lineHeight": { "value": 20, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "Medium": {
@@ -132,9 +132,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 500,
-                    "fontSize": "12px",
-                    "lineHeight": "16px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 12, "unit": "px" },
+                    "lineHeight": { "value": 16, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
             "Small": {
@@ -142,9 +142,9 @@
                 "$value": {
                     "fontFamily": "Inter",
                     "fontWeight": 400,
-                    "fontSize": "10px",
-                    "lineHeight": "14px",
-                    "letterSpacing": "0"
+                    "fontSize": { "value": 10, "unit": "px" },
+                    "lineHeight": { "value": 14, "unit": "px" },
+                    "letterSpacing": { "value": 0, "unit": "px" }
                 }
             }
         }

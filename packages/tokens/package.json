@@ -5,8 +5,8 @@
     "license": "(MIT OR Apache-2.0)",
     "files": [
         "dist",
-        "src",
-        "tokens"
+        "tokens",
+        "scripts"
     ],
     "type": "module",
     "main": "./dist/index.js",
@@ -17,15 +17,11 @@
             "types": "./dist/index.d.ts",
             "import": "./dist/index.js"
         },
-        "./css": "./dist/tokens.css",
-        "./css/light": "./dist/tokens.light.css",
-        "./css/dark": "./dist/tokens.dark.css"
+        "./css": "./dist/tokens.css"
     },
     "scripts": {
-        "build": "bun run prebuild && terrazzo build && tsdown",
         "prebuild": "node ./scripts/transform-figma-modes.mjs",
-        "build:tokens": "bun run prebuild && terrazzo build",
-        "build:ts": "tsdown",
+        "build": "bun run prebuild && terrazzo build",
         "typecheck": "tsc --noEmit",
         "dev": "bun run prebuild && terrazzo build --watch"
     },
@@ -33,7 +29,6 @@
         "@terrazzo/cli": "^2.1.0",
         "@terrazzo/plugin-css": "^2.1.0",
         "@terrazzo/plugin-js": "^2.1.0",
-        "tsdown": "^0.5.0",
         "typescript": "^5.6.3"
     }
 }

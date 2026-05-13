@@ -1,10 +1,10 @@
 {
     "Radius": {
-        "None": { "$type": "dimension", "$value": "0" },
-        "S": { "$type": "dimension", "$value": "4px" },
-        "M": { "$type": "dimension", "$value": "8px" },
-        "L": { "$type": "dimension", "$value": "10px" },
-        "XL": { "$type": "dimension", "$value": "12px" },
-        "Full": { "$type": "dimension", "$value": "9999px" }
+        "None": { "$type": "dimension", "$value": { "value": 0, "unit": "px" } },
+        "S": { "$type": "dimension", "$value": { "value": 4, "unit": "px" } },
+        "M": { "$type": "dimension", "$value": { "value": 8, "unit": "px" } },
+        "L": { "$type": "dimension", "$value": { "value": 10, "unit": "px" } },
+        "XL": { "$type": "dimension", "$value": { "value": 12, "unit": "px" } },
+        "Full": { "$type": "dimension", "$value": { "value": 9999, "unit": "px" } }
     }
 }
