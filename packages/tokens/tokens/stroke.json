@@ -1,0 +1,5 @@
+{
+    "BorderWidth": {
+        "Default": { "$type": "dimension", "$value": "1px" }
+    }
+}
