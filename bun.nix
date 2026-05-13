@@ -1087,6 +1087,10 @@
     url = "https://registry.npmjs.org/@storybook/addon-outline/-/addon-outline-8.6.14.tgz";
     hash = "sha512-CW857JvN6OxGWElqjlzJO2S69DHf+xO3WsEfT5mT3ZtIjmsvRDukdWfDU9bIYUFyA2lFvYjncBGjbK+I91XR7w==";
   };
+  "@storybook/addon-svelte-csf@4.2.0" = fetchurl {
+    url = "https://registry.npmjs.org/@storybook/addon-svelte-csf/-/addon-svelte-csf-4.2.0.tgz";
+    hash = "sha512-ius5C6vp+55upbi7MAiJvBSkXxZuokNwkBfmUgY3sAdvp4IAvBp8A+Yvk6bWZqo2TJTfM4ccT3WAmNTxa9m0sw==";
+  };
   "@storybook/addon-toolbars@8.6.14" = fetchurl {
     url = "https://registry.npmjs.org/@storybook/addon-toolbars/-/addon-toolbars-8.6.14.tgz";
     hash = "sha512-W/wEXT8h3VyZTVfWK/84BAcjAxTdtRiAkT2KAN0nbSHxxB5KEM1MjKpKu2upyzzMa3EywITqbfy4dP6lpkVTwQ==";
@@ -1182,6 +1186,10 @@
   "@storybook/theming@8.6.18" = fetchurl {
     url = "https://registry.npmjs.org/@storybook/theming/-/theming-8.6.18.tgz";
     hash = "sha512-n6OEjEtHupa2PdTwWzRepr7cO8NkDd4rgF6BKLitRbujOspLxzMBEqdphs+QLcuiCIgf33SqmEA64QWnbSMhPw==";
+  };
+  "@storybook/types@8.6.14" = fetchurl {
+    url = "https://registry.npmjs.org/@storybook/types/-/types-8.6.14.tgz";
+    hash = "sha512-33kzHZa7h6/EygeLZDcm1PNRTlybokz8dzAh2JYjpETf77pG8jhPmEfrI2oHSAdgNeK7A3OMcGA/EwEN7EJdzw==";
   };
   "@sveltejs/acorn-typescript@1.0.9" = fetchurl {
     url = "https://registry.npmjs.org/@sveltejs/acorn-typescript/-/acorn-typescript-1.0.9.tgz";
@@ -1798,6 +1806,10 @@
   "dedent-js@1.0.1" = fetchurl {
     url = "https://registry.npmjs.org/dedent-js/-/dedent-js-1.0.1.tgz";
     hash = "sha512-OUepMozQULMLUmhxS95Vudo0jb0UchLimi3+pQ2plj61Fcy8axbP9hbiD4Sz6DPqn6XG3kfmziVfQ1rSys5AJQ==";
+  };
+  "dedent@1.7.2" = fetchurl {
+    url = "https://registry.npmjs.org/dedent/-/dedent-1.7.2.tgz";
+    hash = "sha512-WzMx3mW98SN+zn3hgemf4OzdmyNhhhKz5Ay0pUfQiMQ3e1g+xmTJWp/pKdwKVXhdSkAEGIIzqeuWrL3mV/AXbA==";
   };
   "deep-eql@5.0.2" = fetchurl {
     url = "https://registry.npmjs.org/deep-eql/-/deep-eql-5.0.2.tgz";

@@ -6,7 +6,7 @@ const config: StorybookConfig = {
         "../../../packages/svelte/src/**/*.stories.@(ts|svelte|mdx)",
         "../src/**/*.stories.@(ts|svelte|mdx)",
     ],
-    addons: ["@storybook/addon-essentials", "@storybook/addon-a11y"],
+    addons: ["@storybook/addon-essentials", "@storybook/addon-a11y", "@storybook/addon-svelte-csf"],
 };
 
 export default config;
