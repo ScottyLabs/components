@@ -1,0 +1,1580 @@
+{
+    "$name": "ScottyLabs UI Kit",
+    "$description": "Design tokens exported from Figma",
+    "$extensions": {
+        "com.figma": {
+            "sourceFile": "ScottyLabs UI Kit",
+            "exportedAt": "2026-05-12T22:28:00.761Z",
+            "version": "1.0.0",
+            "originalPaths": {
+                "primitives.gray.white": "Primitives/Gray/White",
+                "primitives.gray.50": "Primitives/Gray/50",
+                "primitives.gray.100": "Primitives/Gray/100",
+                "primitives.gray.200": "Primitives/Gray/200",
+                "primitives.gray.300": "Primitives/Gray/300",
+                "primitives.gray.400": "Primitives/Gray/400",
+                "primitives.gray.500": "Primitives/Gray/500",
+                "primitives.gray.600": "Primitives/Gray/600",
+                "primitives.gray.700": "Primitives/Gray/700",
+                "primitives.gray.800": "Primitives/Gray/800",
+                "primitives.gray.900": "Primitives/Gray/900",
+                "primitives.gray.black": "Primitives/Gray/Black",
+                "primitives.blue (brand).25": "Primitives/Blue (Brand)/25",
+                "primitives.blue (brand).50": "Primitives/Blue (Brand)/50",
+                "primitives.blue (brand).100": "Primitives/Blue (Brand)/100",
+                "primitives.blue (brand).200": "Primitives/Blue (Brand)/200",
+                "primitives.blue (brand).300": "Primitives/Blue (Brand)/300",
+                "primitives.blue (brand).400": "Primitives/Blue (Brand)/400",
+                "primitives.blue (brand).500": "Primitives/Blue (Brand)/500",
+                "primitives.blue (brand).600": "Primitives/Blue (Brand)/600",
+                "primitives.blue (brand).700": "Primitives/Blue (Brand)/700",
+                "primitives.blue (brand).800": "Primitives/Blue (Brand)/800",
+                "primitives.blue (brand).900": "Primitives/Blue (Brand)/900",
+                "primitives.blue-gray.50": "Primitives/Blue-gray/50",
+                "primitives.blue-gray.100": "Primitives/Blue-gray/100",
+                "primitives.blue-gray.200": "Primitives/Blue-gray/200",
+                "primitives.blue-gray.300": "Primitives/Blue-gray/300",
+                "primitives.blue-gray.400": "Primitives/Blue-gray/400",
+                "primitives.blue-gray.500": "Primitives/Blue-gray/500",
+                "primitives.blue-gray.600": "Primitives/Blue-gray/600",
+                "primitives.blue-gray.700": "Primitives/Blue-gray/700",
+                "primitives.blue-gray.800": "Primitives/Blue-gray/800",
+                "primitives.blue-gray.900": "Primitives/Blue-gray/900",
+                "color.background.brand.primary.enabled": "Color/Background/Brand/Primary/Enabled",
+                "color.background.brand.primary.hover": "Color/Background/Brand/Primary/Hover",
+                "color.background.brand.primary.pressed": "Color/Background/Brand/Primary/Pressed",
+                "color.background.brand.secondary.enabled": "Color/Background/Brand/Secondary/Enabled",
+                "color.background.brand.secondary.hover": "Color/Background/Brand/Secondary/Hover",
+                "color.background.brand.secondary.pressed": "Color/Background/Brand/Secondary/Pressed",
+                "color.background.neutral.secondary.enabled": "Color/Background/Neutral/Secondary/Enabled",
+                "color.background.neutral.secondary.hover": "Color/Background/Neutral/Secondary/Hover",
+                "color.background.neutral.secondary.pressed": "Color/Background/Neutral/Secondary/Pressed",
+                "color.background.neutral.inverse.enabled": "Color/Background/Neutral/Inverse/Enabled",
+                "color.background.neutral.inverse.hover": "Color/Background/Neutral/Inverse/Hover",
+                "color.background.neutral.inverse.pressed": "Color/Background/Neutral/Inverse/Pressed",
+                "color.background.neutral.primary": "Color/Background/Neutral/Primary",
+                "color.background.neutral.subtle.enabled": "Color/Background/Neutral/Subtle/Enabled",
+                "color.background.neutral.subtle.hover": "Color/Background/Neutral/Subtle/Hover",
+                "color.background.neutral.subtle.pressed": "Color/Background/Neutral/Subtle/Pressed",
+                "color.background.brandneutral.secondary.enabled": "Color/Background/brandNeutral/Secondary/Enabled",
+                "color.background.brandneutral.secondary.hover": "Color/Background/brandNeutral/Secondary/Hover",
+                "color.background.brandneutral.secondary.pressed": "Color/Background/brandNeutral/Secondary/Pressed",
+                "color.background.brandneutral.subtle.enabled": "Color/Background/brandNeutral/Subtle/Enabled",
+                "color.background.brandneutral.subtle.hover": "Color/Background/brandNeutral/Subtle/Hover",
+                "color.background.brandneutral.subtle.pressed": "Color/Background/brandNeutral/Subtle/Pressed",
+                "color.background.disabled.brand": "Color/Background/Disabled/Brand",
+                "color.background.disabled.neutral": "Color/Background/Disabled/Neutral",
+                "color.background.disabled.brandneutral": "Color/Background/Disabled/brandNeutral",
+                "color.foreground.neutral.primary": "Color/Foreground/Neutral/Primary",
+                "color.foreground.neutral.secondary": "Color/Foreground/Neutral/Secondary",
+                "color.foreground.neutral.tertiary": "Color/Foreground/Neutral/Tertiary",
+                "color.foreground.neutral.on inverse": "Color/Foreground/Neutral/On Inverse",
+                "color.foreground.brand.primary": "Color/Foreground/Brand/Primary",
+                "color.foreground.brand.secondary": "Color/Foreground/Brand/Secondary",
+                "color.foreground.brand.tertiary": "Color/Foreground/Brand/Tertiary",
+                "color.foreground.brand.on brand primary": "Color/Foreground/Brand/On Brand Primary",
+                "color.foreground.brandneutral.primary": "Color/Foreground/brandNeutral/Primary",
+                "color.foreground.brandneutral.secondary": "Color/Foreground/brandNeutral/Secondary",
+                "color.foreground.disabled.brand": "Color/Foreground/Disabled/Brand",
+                "color.foreground.disabled.neutral": "Color/Foreground/Disabled/Neutral",
+                "color.foreground.disabled.brandneutral": "Color/Foreground/Disabled/brandNeutral",
+                "color.stroke.neutral.1": "Color/Stroke/Neutral/1",
+                "color.stroke.neutral.2": "Color/Stroke/Neutral/2",
+                "color.stroke.brand.1": "Color/Stroke/Brand/1",
+                "color.stroke.brand.2": "Color/Stroke/Brand/2",
+                "color.stroke.brandneutral.1": "Color/Stroke/brandNeutral/1",
+                "color.stroke.brandneutral.2": "Color/Stroke/brandNeutral/2",
+                "color.status.danger.background": "Color/Status/Danger/Background",
+                "color.status.danger.foreground": "Color/Status/Danger/Foreground",
+                "primitives.red.50": "Primitives/Red/50",
+                "primitives.red.100": "Primitives/Red/100",
+                "primitives.red.200": "Primitives/Red/200",
+                "primitives.red.300": "Primitives/Red/300",
+                "primitives.red.400": "Primitives/Red/400",
+                "primitives.red.500": "Primitives/Red/500",
+                "primitives.red.600": "Primitives/Red/600",
+                "primitives.red.700": "Primitives/Red/700",
+                "primitives.red.800": "Primitives/Red/800",
+                "primitives.red.900": "Primitives/Red/900",
+                "color.status.success.background": "Color/Status/Success/Background",
+                "color.status.success.foreground": "Color/Status/Success/Foreground",
+                "primitives.green.50": "Primitives/Green/50",
+                "primitives.green.100": "Primitives/Green/100",
+                "primitives.green.200": "Primitives/Green/200",
+                "primitives.green.300": "Primitives/Green/300",
+                "primitives.green.400": "Primitives/Green/400",
+                "primitives.green.500": "Primitives/Green/500",
+                "primitives.green.600": "Primitives/Green/600",
+                "primitives.green.700": "Primitives/Green/700",
+                "primitives.green.800": "Primitives/Green/800",
+                "primitives.green.900": "Primitives/Green/900",
+                "color.background.neutral.primary 2 (on primary)": "Color/Background/Neutral/Primary 2 (on primary)",
+                "primitives.gray.850": "Primitives/Gray/850",
+                "primitives.purple.50": "Primitives/Purple/50",
+                "primitives.purple.100": "Primitives/Purple/100",
+                "primitives.purple.200": "Primitives/Purple/200",
+                "primitives.purple.300": "Primitives/Purple/300",
+                "primitives.purple.400": "Primitives/Purple/400",
+                "primitives.purple.500": "Primitives/Purple/500",
+                "primitives.purple.600": "Primitives/Purple/600",
+                "primitives.purple.700": "Primitives/Purple/700",
+                "primitives.purple.800": "Primitives/Purple/800",
+                "primitives.purple.900": "Primitives/Purple/900",
+                "primitives.yellow.50": "Primitives/Yellow/50",
+                "primitives.yellow.100": "Primitives/Yellow/100",
+                "primitives.yellow.200": "Primitives/Yellow/200",
+                "primitives.yellow.300": "Primitives/Yellow/300",
+                "primitives.yellow.400": "Primitives/Yellow/400",
+                "primitives.yellow.500": "Primitives/Yellow/500",
+                "primitives.yellow.600": "Primitives/Yellow/600",
+                "primitives.yellow.700": "Primitives/Yellow/700",
+                "primitives.yellow.800": "Primitives/Yellow/800",
+                "primitives.yellow.900": "Primitives/Yellow/900",
+                "primitives.orange.50": "Primitives/Orange/50",
+                "primitives.orange.100": "Primitives/Orange/100",
+                "primitives.orange.200": "Primitives/Orange/200",
+                "primitives.orange.300": "Primitives/Orange/300",
+                "primitives.orange.400": "Primitives/Orange/400",
+                "primitives.orange.500": "Primitives/Orange/500",
+                "primitives.orange.600": "Primitives/Orange/600",
+                "primitives.orange.700": "Primitives/Orange/700",
+                "primitives.orange.800": "Primitives/Orange/800",
+                "primitives.orange.900": "Primitives/Orange/900"
+            },
+            "modes": {
+                "VariableCollectionId:115:582": ["115:0"],
+                "VariableCollectionId:116:190": ["116:1", "117:0"]
+            },
+            "modeNames": {
+                "VariableCollectionId:115:582": {
+                    "115:0": "Mode 1"
+                },
+                "VariableCollectionId:116:190": {
+                    "116:1": "Light",
+                    "117:0": "Dark"
+                }
+            },
+            "history": [
+                {
+                    "version": "1.0.0",
+                    "exportedAt": "2026-05-12T22:28:00.761Z",
+                    "changesSummary": "Export from Figma",
+                    "author": "Anish Pallati",
+                    "variableCount": 133
+                }
+            ]
+        }
+    },
+    "Primitives": {
+        "Gray": {
+            "50": {
+                "$value": "#f5f5f5",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "100": {
+                "$value": "#e6e6e6",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "200": {
+                "$value": "#d6d6d6",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "300": {
+                "$value": "#c8c8c8",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "400": {
+                "$value": "#bababa",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "500": {
+                "$value": "#a9a9a9",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "600": {
+                "$value": "#808080",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "700": {
+                "$value": "#666666",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "800": {
+                "$value": "#383838",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "850": {
+                "$value": "#2c2c2c",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "900": {
+                "$value": "#1e1e1e",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "White": {
+                "$value": "#ffffff",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "Black": {
+                "$value": "#000000",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            }
+        },
+        "Blue (Brand)": {
+            "25": {
+                "$value": "#f6fdff",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "50": {
+                "$value": "#e7f5fa",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "100": {
+                "$value": "#b4def1",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "200": {
+                "$value": "#90cfea",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "300": {
+                "$value": "#5eb9e0",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "400": {
+                "$value": "#3eabda",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "500": {
+                "$value": "#0e96d1",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "600": {
+                "$value": "#0d89be",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "700": {
+                "$value": "#0a6b94",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "800": {
+                "$value": "#085373",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "900": {
+                "$value": "#063f58",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            }
+        },
+        "Blue-gray": {
+            "50": {
+                "$value": "#f0f4f8",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "100": {
+                "$value": "#d9e1e7",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "200": {
+                "$value": "#c7d2dc",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "300": {
+                "$value": "#aebdcc",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "400": {
+                "$value": "#9eb1c2",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "500": {
+                "$value": "#869db3",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "600": {
+                "$value": "#7a8fa3",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "700": {
+                "$value": "#5f6f7f",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "800": {
+                "$value": "#4a5662",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "900": {
+                "$value": "#38424b",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            }
+        },
+        "Red": {
+            "50": {
+                "$value": "#fbe9ec",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "100": {
+                "$value": "#f3bbc5",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "200": {
+                "$value": "#ed9aa9",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "300": {
+                "$value": "#e46c82",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "400": {
+                "$value": "#df5069",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "500": {
+                "$value": "#d72444",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "600": {
+                "$value": "#c4213e",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "700": {
+                "$value": "#991a30",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "800": {
+                "$value": "#761425",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "900": {
+                "$value": "#5a0f1d",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            }
+        },
+        "Green": {
+            "50": {
+                "$value": "#e7f6ec",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "100": {
+                "$value": "#b4e2c4",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "200": {
+                "$value": "#90d3a8",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "300": {
+                "$value": "#5ebf80",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "400": {
+                "$value": "#3eb367",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "500": {
+                "$value": "#0ea041",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "600": {
+                "$value": "#0d923b",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "700": {
+                "$value": "#0a722e",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "800": {
+                "$value": "#085824",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "900": {
+                "$value": "#06431b",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            }
+        },
+        "Purple": {
+            "50": {
+                "$value": "#f0ecfa",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "100": {
+                "$value": "#d1c4ee",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "200": {
+                "$value": "#baa7e6",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "300": {
+                "$value": "#9b7fdb",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "400": {
+                "$value": "#8766d4",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "500": {
+                "$value": "#6940c9",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "600": {
+                "$value": "#603ab7",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "700": {
+                "$value": "#4b2d8f",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "800": {
+                "$value": "#3a236f",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "900": {
+                "$value": "#2c1b54",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            }
+        },
+        "Yellow": {
+            "50": {
+                "$value": "#fef7e6",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "100": {
+                "$value": "#fae7b0",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "200": {
+                "$value": "#f8db8a",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "300": {
+                "$value": "#f5ca54",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "400": {
+                "$value": "#f3c033",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "500": {
+                "$value": "#f0b000",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "600": {
+                "$value": "#daa000",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "700": {
+                "$value": "#aa7d00",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "800": {
+                "$value": "#846100",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "900": {
+                "$value": "#654a00",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            }
+        },
+        "Orange": {
+            "50": {
+                "$value": "#fdeee6",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "100": {
+                "$value": "#f9cab2",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "200": {
+                "$value": "#f6b18c",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "300": {
+                "$value": "#f28d58",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "400": {
+                "$value": "#ef7737",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "500": {
+                "$value": "#eb5505",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "600": {
+                "$value": "#d64d05",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "700": {
+                "$value": "#a73c04",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "800": {
+                "$value": "#812f03",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            },
+            "900": {
+                "$value": "#632402",
+                "$type": "color",
+                "$extensions": {
+                    "com.figma": {
+                        "scopes": ["ALL_SCOPES"]
+                    }
+                }
+            }
+        }
+    },
+    "Color": {
+        "Background": {
+            "Brand": {
+                "Primary": {
+                    "Enabled": {
+                        "$value": {
+                            "Light": "{Primitives.Blue (Brand).500}",
+                            "Dark": "{Primitives.Blue (Brand).600}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Hover": {
+                        "$value": {
+                            "Light": "{Primitives.Blue (Brand).600}",
+                            "Dark": "{Primitives.Blue (Brand).500}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Pressed": {
+                        "$value": {
+                            "Light": "{Primitives.Blue (Brand).700}",
+                            "Dark": "{Primitives.Blue (Brand).700}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    }
+                },
+                "Secondary": {
+                    "Enabled": {
+                        "$value": {
+                            "Light": "{Primitives.Blue (Brand).50}",
+                            "Dark": "{Primitives.Blue (Brand).900}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Hover": {
+                        "$value": {
+                            "Light": "{Primitives.Blue (Brand).25}",
+                            "Dark": "{Primitives.Blue (Brand).800}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Pressed": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.50}",
+                            "Dark": "{Primitives.Blue (Brand).900}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    }
+                }
+            },
+            "Neutral": {
+                "Secondary": {
+                    "Enabled": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.50}",
+                            "Dark": "{Primitives.Gray.800}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Hover": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.100}",
+                            "Dark": "{Primitives.Gray.700}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Pressed": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.200}",
+                            "Dark": "{Primitives.Gray.900}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    }
+                },
+                "Inverse": {
+                    "Enabled": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.900}",
+                            "Dark": "{Primitives.Gray.White}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Hover": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.800}",
+                            "Dark": "{Primitives.Gray.50}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Pressed": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.700}",
+                            "Dark": "{Primitives.Gray.100}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    }
+                },
+                "Primary": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.White}",
+                        "Dark": "{Primitives.Gray.900}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Subtle": {
+                    "Enabled": {
+                        "$value": {
+                            "Light": "#ffffff00",
+                            "Dark": "#ffffff00"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Hover": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.50}",
+                            "Dark": "{Primitives.Gray.800}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Pressed": {
+                        "$value": {
+                            "Light": "{Primitives.Gray.100}",
+                            "Dark": "{Primitives.Gray.900}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    }
+                },
+                "Primary 2 (on primary)": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.White}",
+                        "Dark": "{Primitives.Gray.850}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            },
+            "brandNeutral": {
+                "Secondary": {
+                    "Enabled": {
+                        "$value": {
+                            "Light": "{Primitives.Blue-gray.50}",
+                            "Dark": "{Primitives.Blue-gray.900}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Hover": {
+                        "$value": {
+                            "Light": "{Primitives.Blue-gray.100}",
+                            "Dark": "{Primitives.Blue-gray.800}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Pressed": {
+                        "$value": {
+                            "Light": "{Primitives.Blue-gray.200}",
+                            "Dark": "{Primitives.Blue-gray.900}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    }
+                },
+                "Subtle": {
+                    "Enabled": {
+                        "$value": {
+                            "Light": "#ffffff00",
+                            "Dark": "#ffffff00"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Hover": {
+                        "$value": {
+                            "Light": "{Primitives.Blue-gray.50}",
+                            "Dark": "{Primitives.Blue-gray.900}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    },
+                    "Pressed": {
+                        "$value": {
+                            "Light": "{Primitives.Blue-gray.100}",
+                            "Dark": "{Primitives.Blue-gray.900}"
+                        },
+                        "$type": "color",
+                        "$extensions": {
+                            "com.figma": {
+                                "scopes": ["ALL_SCOPES"]
+                            }
+                        }
+                    }
+                }
+            },
+            "Disabled": {
+                "Brand": {
+                    "$value": {
+                        "Light": "{Primitives.Blue (Brand).25}",
+                        "Dark": "{Primitives.Blue (Brand).900}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Neutral": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.50}",
+                        "Dark": "{Primitives.Gray.800}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "brandNeutral": {
+                    "$value": {
+                        "Light": "{Primitives.Blue-gray.50}",
+                        "Dark": "{Primitives.Blue-gray.900}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            }
+        },
+        "Foreground": {
+            "Neutral": {
+                "Primary": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.900}",
+                        "Dark": "{Primitives.Gray.White}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Secondary": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.700}",
+                        "Dark": "{Primitives.Gray.100}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Tertiary": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.600}",
+                        "Dark": "{Primitives.Gray.300}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "On Inverse": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.White}",
+                        "Dark": "{Primitives.Gray.Black}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            },
+            "Brand": {
+                "Primary": {
+                    "$value": {
+                        "Light": "{Primitives.Blue (Brand).700}",
+                        "Dark": "{Primitives.Blue (Brand).500}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Secondary": {
+                    "$value": {
+                        "Light": "{Primitives.Blue (Brand).600}",
+                        "Dark": "{Primitives.Blue (Brand).400}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Tertiary": {
+                    "$value": {
+                        "Light": "{Primitives.Blue (Brand).500}",
+                        "Dark": "{Primitives.Blue (Brand).600}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "On Brand Primary": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.White}",
+                        "Dark": "{Primitives.Gray.White}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            },
+            "brandNeutral": {
+                "Primary": {
+                    "$value": {
+                        "Light": "{Primitives.Blue-gray.800}",
+                        "Dark": "{Primitives.Blue-gray.100}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Secondary": {
+                    "$value": {
+                        "Light": "{Primitives.Blue-gray.600}",
+                        "Dark": "{Primitives.Blue-gray.400}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            },
+            "Disabled": {
+                "Brand": {
+                    "$value": {
+                        "Light": "{Primitives.Blue (Brand).200}",
+                        "Dark": "{Primitives.Blue (Brand).700}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Neutral": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.400}",
+                        "Dark": "{Primitives.Gray.700}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "brandNeutral": {
+                    "$value": {
+                        "Light": "{Primitives.Blue-gray.300}",
+                        "Dark": "{Primitives.Blue-gray.700}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            }
+        },
+        "Stroke": {
+            "Neutral": {
+                "1": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.200}",
+                        "Dark": "{Primitives.Gray.700}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "2": {
+                    "$value": {
+                        "Light": "{Primitives.Gray.100}",
+                        "Dark": "{Primitives.Gray.800}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            },
+            "Brand": {
+                "1": {
+                    "$value": {
+                        "Light": "{Primitives.Blue (Brand).500}",
+                        "Dark": "{Primitives.Blue (Brand).600}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "2": {
+                    "$value": {
+                        "Light": "{Primitives.Blue (Brand).200}",
+                        "Dark": "{Primitives.Blue (Brand).700}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            },
+            "brandNeutral": {
+                "1": {
+                    "$value": {
+                        "Light": "{Primitives.Blue-gray.400}",
+                        "Dark": "{Primitives.Blue-gray.500}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "2": {
+                    "$value": {
+                        "Light": "{Primitives.Blue-gray.100}",
+                        "Dark": "{Primitives.Blue-gray.800}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            }
+        },
+        "Status": {
+            "Danger": {
+                "Background": {
+                    "$value": {
+                        "Light": "{Primitives.Red.50}",
+                        "Dark": "#991a3040"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Foreground": {
+                    "$value": {
+                        "Light": "{Primitives.Red.600}",
+                        "Dark": "{Primitives.Red.200}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            },
+            "Success": {
+                "Background": {
+                    "$value": {
+                        "Light": "{Primitives.Green.50}",
+                        "Dark": "#0a722e40"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                },
+                "Foreground": {
+                    "$value": {
+                        "Light": "{Primitives.Green.700}",
+                        "Dark": "{Primitives.Green.200}"
+                    },
+                    "$type": "color",
+                    "$extensions": {
+                        "com.figma": {
+                            "scopes": ["ALL_SCOPES"]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

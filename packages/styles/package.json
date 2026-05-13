@@ -1,0 +1,24 @@
+{
+    "name": "@scottylabs/styles",
+    "version": "0.0.0",
+    "description": "Pre-compiled component CSS for the ScottyLabs component library. References tokens via CSS custom properties. Class names are prefixed sl-.",
+    "license": "(MIT OR Apache-2.0)",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "type": "module",
+    "exports": {
+        ".": "./dist/index.css",
+        "./base": "./dist/base.css",
+        "./components/*": "./dist/components/*.css"
+    },
+    "scripts": {
+        "build": "node ./build.mjs",
+        "typecheck": "echo no-op"
+    },
+    "devDependencies": {},
+    "peerDependencies": {
+        "@scottylabs/tokens": "workspace:*"
+    }
+}

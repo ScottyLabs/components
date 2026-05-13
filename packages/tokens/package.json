@@ -1,0 +1,38 @@
+{
+    "name": "@scottylabs/tokens",
+    "version": "0.0.0",
+    "description": "Design tokens for the ScottyLabs component library. Generated from Figma via Terrazzo. CSS custom properties + TypeScript constants with Light/Dark mode support.",
+    "license": "(MIT OR Apache-2.0)",
+    "files": [
+        "dist",
+        "src",
+        "tokens"
+    ],
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        },
+        "./css": "./dist/tokens.css",
+        "./css/light": "./dist/tokens.light.css",
+        "./css/dark": "./dist/tokens.dark.css"
+    },
+    "scripts": {
+        "build": "terrazzo build && tsdown",
+        "build:tokens": "terrazzo build",
+        "build:ts": "tsdown",
+        "typecheck": "tsc --noEmit",
+        "dev": "terrazzo build --watch"
+    },
+    "devDependencies": {
+        "@terrazzo/cli": "^0.10.0",
+        "@terrazzo/plugin-css": "^0.10.0",
+        "@terrazzo/plugin-js": "^0.10.0",
+        "tsdown": "^0.5.0",
+        "typescript": "^5.6.3"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "@scottylabs/storybook-svelte",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Svelte Storybook for the ScottyLabs component library.",
+    "license": "(MIT OR Apache-2.0)",
+    "type": "module",
+    "scripts": {
+        "dev": "storybook dev -p 6008",
+        "build": "storybook build --output-dir storybook-static",
+        "typecheck": "svelte-check --tsconfig ./tsconfig.json"
+    },
+    "dependencies": {
+        "@scottylabs/styles": "workspace:*",
+        "@scottylabs/svelte": "workspace:*",
+        "@scottylabs/tokens": "workspace:*"
+    },
+    "devDependencies": {
+        "@storybook/addon-a11y": "^8.4.0",
+        "@storybook/addon-essentials": "^8.4.0",
+        "@storybook/svelte": "^8.4.0",
+        "@storybook/svelte-vite": "^8.4.0",
+        "@sveltejs/vite-plugin-svelte": "^4.0.0",
+        "bits-ui": "^2.0.0",
+        "storybook": "^8.4.0",
+        "svelte": "^5.0.0",
+        "svelte-check": "^4.0.0",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.0"
+    }
+}

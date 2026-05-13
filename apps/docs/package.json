@@ -1,0 +1,20 @@
+{
+    "name": "@scottylabs/docs",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Documentation site for the ScottyLabs component library, built with Astro Starlight.",
+    "license": "(MIT OR Apache-2.0)",
+    "type": "module",
+    "scripts": {
+        "dev": "astro dev --port 4321",
+        "build": "astro build",
+        "preview": "astro preview",
+        "typecheck": "astro check"
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.9.0",
+        "@astrojs/starlight": "^0.30.0",
+        "astro": "^4.16.0",
+        "typescript": "^5.6.3"
+    }
+}

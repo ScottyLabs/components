@@ -1,0 +1,12 @@
+inputs:
+  scottylabs:
+    url: github:ScottyLabs/devenv
+  bun2nix:
+    url: github:nix-community/bun2nix
+  treefmt-nix:
+    url: github:numtide/treefmt-nix
+  git-hooks:
+    url: github:cachix/git-hooks.nix
+    inputs:
+      nixpkgs:
+        follows: nixpkgs

@@ -1,0 +1,25 @@
+{
+    "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
+    "changelog": "@changesets/cli/changelog",
+    "commit": false,
+    "fixed": [
+        [
+            "@scottylabs/tokens",
+            "@scottylabs/styles",
+            "@scottylabs/variants",
+            "@scottylabs/types",
+            "@scottylabs/react",
+            "@scottylabs/svelte"
+        ]
+    ],
+    "linked": [],
+    "access": "public",
+    "baseBranch": "main",
+    "updateInternalDependencies": "patch",
+    "ignore": [
+        "@scottylabs/docs",
+        "@scottylabs/storybook",
+        "@scottylabs/storybook-react",
+        "@scottylabs/storybook-svelte"
+    ]
+}

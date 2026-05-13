@@ -1,0 +1,35 @@
+# Nix / devenv
+.devenv/
+.devenv.flake.nix
+.pre-commit-config.yaml
+result
+result-*
+
+# AI
+.mcp.json
+.claude
+
+# direnv
+.direnv/
+.envrc.local
+
+# Node / Bun
+node_modules/
+.bun/
+
+# Build outputs
+dist/
+build/
+.svelte-kit/
+.astro/
+storybook-static/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log

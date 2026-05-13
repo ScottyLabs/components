@@ -1,0 +1,9 @@
+@layer reset, tokens, components, utilities, overrides;
+
+@layer reset {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+}

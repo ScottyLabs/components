@@ -1,0 +1,26 @@
+---
+title: Theming
+description: Switching color modes and overriding tokens.
+---
+
+## Color mode
+
+Set the `data-theme` attribute on `<html>` (or any ancestor element) to switch palettes:
+
+```html
+<html data-theme="dark">
+    <!-- light by default; "dark" flips all semantic tokens -->
+</html>
+```
+
+## Overriding tokens
+
+All tokens are CSS custom properties prefixed `--sl-`. Override any of them in a higher-specificity (or later cascade-layer) rule:
+
+```css
+:root {
+    --sl-background-brand-primary-enabled: #ff6600;
+}
+```
+
+The cascade layer order is `reset, tokens, components, utilities, overrides`. Overrides placed in the `overrides` layer or left unlayered take precedence over the library's own styles, so there's no need for `!important` or higher-specificity selectors.

@@ -1,0 +1,6 @@
+# Generated files
+packages/tokens/figma-export.json linguist-generated=true
+bun.lock                          linguist-generated=true
+**/bun.nix                        linguist-generated=true
+flake.lock                        linguist-generated=true
+devenv.lock                       linguist-generated=true
