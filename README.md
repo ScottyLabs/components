@@ -1,6 +1,6 @@
 # @scottylabs/components
 
-This monorepo is ScottyLabs' design system, providing design tokens and components for React and Svelte built from a shared Figma source.
+This monorepo is ScottyLabs' design system, providing design tokens and components for React and Svelte built from a shared [Figma source](https://www.figma.com/design/TlYR1IqgGhRDXHyKJ1LHQs/ScottyLabs-UI-Kit).
 
 The library is split across six packages:
 
