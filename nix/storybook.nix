@@ -10,8 +10,8 @@ mkBunDerivation {
   bunNix = ../bun.nix;
   packageJson = ../package.json;
 
-  SB_REACT_URL = "https://react.components.scottylabs.org";
-  SB_SVELTE_URL = "https://svelte.components.scottylabs.org";
+  SB_REACT_URL = "https://react.storybook.scottylabs.org";
+  SB_SVELTE_URL = "https://svelte.storybook.scottylabs.org";
 
   buildPhase = ''
     runHook preBuild

@@ -4,4 +4,4 @@ This app is the narrative documentation site for the design system, built with S
 
 Pages live in `src/content/docs/`, and the sidebar structure is declared in `astro.config.mjs`.
 
-The "Components" sidebar entry deep-links out to the Storybook composition host at `components.components.scottylabs.org` rather than embedding it via iframe.
+The "Components" sidebar entry deep-links out to the Storybook composition host at `components.scottylabs.org` rather than embedding it via iframe.
