@@ -6,7 +6,7 @@ const config: StorybookConfig = {
         "../../../packages/react/src/**/*.stories.@(ts|tsx|mdx)",
         "../src/**/*.stories.@(ts|tsx|mdx)",
     ],
-    addons: ["@storybook/addon-essentials", "@storybook/addon-a11y"],
+    addons: ["@storybook/addon-a11y"],
     typescript: {
         reactDocgen: "react-docgen-typescript",
     },
