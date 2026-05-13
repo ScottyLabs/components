@@ -1,6 +1,6 @@
 {
-    "Typography": {
-        "Display": {
+    "typography": {
+        "display": {
             "1": {
                 "$type": "typography",
                 "$value": {
@@ -22,7 +22,7 @@
                 }
             }
         },
-        "Heading": {
+        "heading": {
             "1": {
                 "$type": "typography",
                 "$value": {
@@ -84,7 +84,7 @@
                 }
             }
         },
-        "Body": {
+        "body": {
             "1": {
                 "$type": "typography",
                 "$value": {
@@ -116,8 +116,8 @@
                 }
             }
         },
-        "Label": {
-            "Large": {
+        "label": {
+            "large": {
                 "$type": "typography",
                 "$value": {
                     "fontFamily": "Inter",
@@ -127,7 +127,7 @@
                     "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
-            "Medium": {
+            "medium": {
                 "$type": "typography",
                 "$value": {
                     "fontFamily": "Inter",
@@ -137,7 +137,7 @@
                     "letterSpacing": { "value": 0, "unit": "px" }
                 }
             },
-            "Small": {
+            "small": {
                 "$type": "typography",
                 "$value": {
                     "fontFamily": "Inter",

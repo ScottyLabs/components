@@ -1,9 +1,12 @@
-// Tokenhaus exports modes inline as `$value: { Light: ..., Dark: ... }` and stores colors as
-// hex strings like "#0e96d1", but Terrazzo 2.x expects W3C DTCG modes under
-// `$extensions.mode.<mode-name>` with the default in `$value`, and colors in object notation
-// `{ colorSpace: "srgb", components: [r, g, b], alpha }`. This script rewrites both shapes
-// so the strict Terrazzo lint rules (core/valid-color, core/valid-dimension, core/valid-number)
-// stay enabled.
+// Transforms the Tokenhaus DTCG export into the shape Terrazzo 2.x expects:
+//
+// 1. Modes inline as `$value: { Light: ..., Dark: ... }` become DTCG `$extensions.mode.<mode>`
+//    with the default mode (Light) in `$value`.
+// 2. Hex string colors ("#0e96d1") become object form ({colorSpace, components, alpha}).
+// 3. Token paths are renamed to kebab-case to satisfy Terrazzo's core/consistent-naming rule,
+//    including alias references like `{Primitives.Blue (Brand).500}` ->
+//    `{primitives.blue-brand.500}`. Keys under `$value` and `$extensions` are preserved
+//    verbatim since those positions hold data, not token paths.
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
@@ -37,6 +40,16 @@ function isHexColor(value) {
     return typeof value === "string" && /^#[0-9a-fA-F]{3,8}$/.test(value);
 }
 
+function toKebab(s) {
+    return s
+        .replace(/\(([^)]*)\)/g, "-$1")
+        .replace(/[A-Z]+/g, (m, offset) => (offset === 0 ? m.toLowerCase() : `-${m.toLowerCase()}`))
+        .replace(/[\s_]+/g, "-")
+        .replace(/-+/g, "-")
+        .replace(/^-|-$/g, "")
+        .toLowerCase();
+}
+
 function hexToColorObject(hex) {
     let body = hex.slice(1);
     if (body.length === 3) {
@@ -64,53 +77,70 @@ function round(n) {
     return Math.round(n * 10000) / 10000;
 }
 
+function rewriteAlias(value) {
+    if (!isAlias(value)) return value;
+    const inner = value.slice(1, -1);
+    return `{${inner.split(".").map(toKebab).join(".")}}`;
+}
+
 function normalizeColorValue(value) {
-    if (isAlias(value)) return value;
+    if (isAlias(value)) return rewriteAlias(value);
     if (isHexColor(value)) return hexToColorObject(value);
     return value;
 }
 
-function transform(node) {
-    if (node === null || typeof node !== "object") return node;
-    if (Array.isArray(node)) return node.map(transform);
-
+function transformToken(node) {
     if (isToken(node) && hasModeShape(node.$value)) {
         const modes = node.$value;
         const { [DEFAULT_MODE]: defaultValue, ...otherModes } = modes;
         const isColor = node.$type === "color";
-        const next = {
-            ...node,
-            $value: isColor ? normalizeColorValue(defaultValue) : defaultValue,
-        };
-        const existingExt = node.$extensions ?? {};
-        const transformedOtherModes = isColor
+        const transformedDefault = isColor ? normalizeColorValue(defaultValue) : defaultValue;
+        const transformedOther = isColor
             ? Object.fromEntries(
-                  Object.entries(otherModes).map(([mode, modeValue]) => [
-                      mode,
-                      normalizeColorValue(modeValue),
-                  ]),
+                  Object.entries(otherModes).map(([m, v]) => [m, normalizeColorValue(v)]),
               )
             : otherModes;
-        next.$extensions = {
-            ...existingExt,
-            mode: { ...existingExt.mode, ...transformedOtherModes },
+        const existingExt = node.$extensions ?? {};
+        return {
+            ...node,
+            $value: transformedDefault,
+            $extensions: {
+                ...existingExt,
+                mode: { ...existingExt.mode, ...transformedOther },
+            },
         };
-        return next;
     }
 
     if (isToken(node) && node.$type === "color") {
         return { ...node, $value: normalizeColorValue(node.$value) };
     }
 
+    return node;
+}
+
+function walkAndRename(node, inExtensions = false, inValue = false) {
+    if (typeof node === "string") {
+        return inExtensions || inValue ? node : rewriteAlias(node);
+    }
+    if (node === null || typeof node !== "object") return node;
+    if (Array.isArray(node)) return node.map((n) => walkAndRename(n, inExtensions, inValue));
+
+    const transformedNode = inExtensions || inValue ? node : transformToken(node);
+
     const out = {};
-    for (const [k, v] of Object.entries(node)) {
-        out[k] = transform(v);
+    for (const [key, value] of Object.entries(transformedNode)) {
+        const isMeta = key.startsWith("$");
+        const skipRename = inExtensions || inValue || isMeta;
+        const newKey = skipRename ? key : toKebab(key);
+        const childInExt = inExtensions || key === "$extensions";
+        const childInValue = inValue || key === "$value";
+        out[newKey] = walkAndRename(value, childInExt, childInValue);
     }
     return out;
 }
 
 const input = JSON.parse(readFileSync(inputPath, "utf8"));
-const output = transform(input);
+const output = walkAndRename(input);
 
 mkdirSync(dirname(outputPath), { recursive: true });
 writeFileSync(outputPath, `${JSON.stringify(output, null, 4)}\n`);

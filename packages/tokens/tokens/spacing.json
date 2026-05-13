@@ -1,5 +1,5 @@
 {
-    "Spacing": {
+    "spacing": {
         "0": { "$type": "dimension", "$value": { "value": 0, "unit": "px" } },
         "2": { "$type": "dimension", "$value": { "value": 2, "unit": "px" } },
         "4": { "$type": "dimension", "$value": { "value": 4, "unit": "px" } },
@@ -11,10 +11,10 @@
         "16": { "$type": "dimension", "$value": { "value": 16, "unit": "px" } },
         "20": { "$type": "dimension", "$value": { "value": 20, "unit": "px" } }
     },
-    "IconSize": {
-        "XS": { "$type": "dimension", "$value": { "value": 12, "unit": "px" } },
-        "S": { "$type": "dimension", "$value": { "value": 16, "unit": "px" } },
-        "M": { "$type": "dimension", "$value": { "value": 20, "unit": "px" } },
-        "L": { "$type": "dimension", "$value": { "value": 24, "unit": "px" } }
+    "icon-size": {
+        "xs": { "$type": "dimension", "$value": { "value": 12, "unit": "px" } },
+        "s": { "$type": "dimension", "$value": { "value": 16, "unit": "px" } },
+        "m": { "$type": "dimension", "$value": { "value": 20, "unit": "px" } },
+        "l": { "$type": "dimension", "$value": { "value": 24, "unit": "px" } }
     }
 }
