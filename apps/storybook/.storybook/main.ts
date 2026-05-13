@@ -5,7 +5,7 @@ const svelteUrl = process.env["SB_SVELTE_URL"] ?? "http://localhost:6008";
 
 const config: StorybookConfig = {
     framework: "@storybook/html-vite",
-    stories: [],
+    stories: ["../src/**/*.@(mdx|stories.@(ts|tsx|mdx))"],
     addons: [],
     refs: {
         react: {
