@@ -6,7 +6,7 @@
     "license": "(MIT OR Apache-2.0)",
     "type": "module",
     "scripts": {
-        "dev": "storybook dev -p 6007",
+        "dev": "storybook dev -p 6007 --disable-telemetry",
         "build": "storybook build --output-dir storybook-static",
         "typecheck": "tsc --noEmit"
     },

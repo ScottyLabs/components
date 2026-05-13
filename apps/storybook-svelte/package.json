@@ -6,7 +6,7 @@
     "license": "(MIT OR Apache-2.0)",
     "type": "module",
     "scripts": {
-        "dev": "storybook dev -p 6008",
+        "dev": "storybook dev -p 6008 --disable-telemetry",
         "build": "storybook build --output-dir storybook-static",
         "typecheck": "svelte-check --tsconfig ./tsconfig.json"
     },
