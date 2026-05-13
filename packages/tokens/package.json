@@ -17,7 +17,14 @@
             "types": "./dist/index.d.ts",
             "import": "./dist/index.js"
         },
-        "./css": "./dist/tokens.css"
+        "./css": "./dist/tokens.css",
+        "./dtcg/colors": "./tokens/colors.generated.json",
+        "./dtcg/typography": "./tokens/typography.json",
+        "./dtcg/radius": "./tokens/radius.json",
+        "./dtcg/spacing": "./tokens/spacing.json",
+        "./dtcg/stroke": "./tokens/stroke.json",
+        "./dtcg/shadow": "./tokens/shadow.json",
+        "./dtcg/elevation": "./tokens/elevation.json"
     },
     "scripts": {
         "prebuild": "node ./scripts/transform-figma-modes.mjs",

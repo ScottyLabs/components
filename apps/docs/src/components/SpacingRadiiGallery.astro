@@ -1,0 +1,172 @@
+---
+import radius from "@scottylabs/tokens/dtcg/radius";
+import spacing from "@scottylabs/tokens/dtcg/spacing";
+import stroke from "@scottylabs/tokens/dtcg/stroke";
+
+type DimToken = {
+    $type: "dimension";
+    $value: { value: number; unit: string };
+};
+
+function entriesOf(group: Record<string, DimToken>) {
+    return Object.entries(group).map(([key, token]) => ({
+        key,
+        value: token.$value.value,
+        unit: token.$value.unit,
+    }));
+}
+
+const radii = entriesOf((radius as any).radius);
+const spacings = entriesOf((spacing as any).spacing);
+const iconSizes = entriesOf((spacing as any)["icon-size"]);
+const borderWidths = entriesOf((stroke as any)["border-width"]);
+---
+
+<div class="scales">
+    <section>
+        <h3>Spacing</h3>
+        <div class="rows">
+            {
+                spacings.map((s) => (
+                    <div class="row">
+                        <span class="label">spacing.{s.key}</span>
+                        <div
+                            class="bar"
+                            style={`width: var(--sl-spacing-${s.key}); min-width: 1px`}
+                        />
+                        <span class="value">
+                            {s.value}
+                            {s.unit}
+                        </span>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+
+    <section>
+        <h3>Radii</h3>
+        <div class="grid">
+            {
+                radii.map((r) => (
+                    <div class="cell">
+                        <div
+                            class="block"
+                            style={`border-radius: var(--sl-radius-${r.key})`}
+                        />
+                        <span class="label">radius.{r.key}</span>
+                        <span class="value">
+                            {r.value}
+                            {r.unit}
+                        </span>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+
+    <section>
+        <h3>Icon sizes</h3>
+        <div class="grid">
+            {
+                iconSizes.map((i) => (
+                    <div class="cell">
+                        <div
+                            class="block"
+                            style={`width: var(--sl-icon-size-${i.key}); height: var(--sl-icon-size-${i.key})`}
+                        />
+                        <span class="label">icon-size.{i.key}</span>
+                        <span class="value">
+                            {i.value}
+                            {i.unit}
+                        </span>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+
+    <section>
+        <h3>Border widths</h3>
+        <div class="rows">
+            {
+                borderWidths.map((b) => (
+                    <div class="row">
+                        <span class="label">border-width.{b.key}</span>
+                        <div
+                            class="border-sample"
+                            style={`border: var(--sl-border-width-${b.key}) solid currentColor`}
+                        />
+                        <span class="value">
+                            {b.value}
+                            {b.unit}
+                        </span>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+</div>
+
+<style>
+    .scales,
+    .scales * {
+        margin: 0;
+    }
+    .scales {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    section h3 {
+        margin: 0 0 0.5rem 0;
+    }
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 10rem 1fr 4rem;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    .bar {
+        height: 1.5rem;
+        background: currentColor;
+        opacity: 0.4;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+        align-items: start;
+        gap: 0.75rem;
+    }
+    .cell {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        align-items: flex-start;
+    }
+    .block {
+        width: 3rem;
+        height: 3rem;
+        background: currentColor;
+        opacity: 0.4;
+    }
+    .border-sample {
+        width: 6rem;
+        height: 2rem;
+    }
+    .label,
+    .value {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+    .value {
+        font-size: 0.7rem;
+        opacity: 0.7;
+    }
+</style>

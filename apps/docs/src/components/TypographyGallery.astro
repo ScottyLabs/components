@@ -1,0 +1,80 @@
+---
+import typography from "@scottylabs/tokens/dtcg/typography";
+
+type TypoToken = {
+    $type: "typography";
+    $value: {
+        fontFamily: string;
+        fontWeight: number;
+        fontSize: { value: number; unit: string };
+        lineHeight: { value: number; unit: string };
+        letterSpacing: { value: number; unit: string };
+    };
+};
+
+const groups = (typography as any).typography as Record<
+    string,
+    Record<string, TypoToken>
+>;
+
+const sections = Object.entries(groups).map(([groupName, tokens]) => ({
+    group: groupName,
+    samples: Object.entries(tokens).map(([sizeName, token]) => ({
+        size: sizeName,
+        cssVar: `--sl-typography-${groupName}-${sizeName}`,
+        meta: token.$value,
+    })),
+}));
+---
+
+<div class="typography">
+    {
+        sections.map(({ group, samples }) => (
+            <section>
+                {samples.map((s) => (
+                    <div class="sample">
+                        <span class="text" style={`font: var(${s.cssVar})`}>
+                            {`${group} ${s.size}`}
+                        </span>
+                        <span class="meta">
+                            {s.meta.fontWeight}{" / "}
+                            {s.meta.fontSize.value}px/{s.meta.lineHeight.value}px{" / "}
+                            {s.meta.fontFamily}
+                        </span>
+                    </div>
+                ))}
+            </section>
+        ))
+    }
+</div>
+
+<style>
+    .typography,
+    .typography * {
+        margin: 0;
+    }
+    .typography {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .sample {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .text {
+        display: inline-block;
+    }
+    .meta {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.75rem;
+        line-height: 1.4;
+        opacity: 0.7;
+    }
+</style>

@@ -1,14 +1,40 @@
-import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
     integrations: [
         starlight({
             title: "ScottyLabs Components",
             description: "Design system, components, and tokens for ScottyLabs projects.",
-            social: {
-                codeberg: "https://codeberg.org/ScottyLabs/components",
-            },
+            customCss: ["@scottylabs/tokens/css"],
+            head: [
+                {
+                    tag: "link",
+                    attrs: { rel: "preconnect", href: "https://fonts.googleapis.com" },
+                },
+                {
+                    tag: "link",
+                    attrs: {
+                        rel: "preconnect",
+                        href: "https://fonts.gstatic.com",
+                        crossorigin: true,
+                    },
+                },
+                {
+                    tag: "link",
+                    attrs: {
+                        rel: "stylesheet",
+                        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+                    },
+                },
+            ],
+            social: [
+                {
+                    icon: "codeberg",
+                    label: "Codeberg",
+                    href: "https://codeberg.org/ScottyLabs/components",
+                },
+            ],
             sidebar: [
                 {
                     label: "Getting started",
@@ -29,7 +55,7 @@ export default defineConfig({
                 },
                 {
                     label: "Components",
-                    link: "https://components.components.scottylabs.org",
+                    link: "https://storybook.scottylabs.org",
                     attrs: { target: "_blank", rel: "noopener" },
                 },
             ],

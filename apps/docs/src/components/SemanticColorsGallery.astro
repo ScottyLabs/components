@@ -1,0 +1,129 @@
+---
+import colors from "@scottylabs/tokens/dtcg/colors";
+
+type Token = {
+    $type: string;
+    $value: string | { components: [number, number, number]; alpha?: number };
+    $extensions?: { mode?: Record<string, string | { components: [number, number, number]; alpha?: number }> };
+};
+
+function flatten(node: any, path: string[] = []): { path: string[]; token: Token }[] {
+    if (!node || typeof node !== "object") return [];
+    if ("$value" in node && "$type" in node) {
+        return [{ path, token: node as Token }];
+    }
+    const out: { path: string[]; token: Token }[] = [];
+    for (const [key, value] of Object.entries(node)) {
+        if (key.startsWith("$")) continue;
+        out.push(...flatten(value, [...path, key]));
+    }
+    return out;
+}
+
+const colorSubtree = (colors as any).color;
+const allTokens = flatten(colorSubtree).map(({ path, token }) => ({
+    path: ["color", ...path].join("."),
+    cssVar: `--sl-color-${path.join("-")}`,
+    lightSource: typeof token.$value === "string" ? token.$value : null,
+    darkSource:
+        token.$extensions?.mode?.Dark && typeof token.$extensions.mode.Dark === "string"
+            ? token.$extensions.mode.Dark
+            : null,
+}));
+
+const groups = ["background", "foreground", "stroke", "status"];
+const grouped = groups.map((group) => ({
+    group,
+    tokens: allTokens.filter((t) => t.path.startsWith(`color.${group}.`)),
+}));
+---
+
+<div class="semantic">
+    {
+        grouped.map(({ group, tokens }) => (
+            <section class="group">
+                <h3>{group}</h3>
+                <div class="rows">
+                    {tokens.map((t) => (
+                        <div class="row">
+                            <div class="swatch-pair">
+                                <div
+                                    class="swatch"
+                                    style={`background: var(${t.cssVar})`}
+                                    title="Light"
+                                />
+                                <div
+                                    class="swatch dark"
+                                    data-theme="dark"
+                                    style={`background: var(${t.cssVar})`}
+                                    title="Dark"
+                                />
+                            </div>
+                            <div class="meta">
+                                <span class="name">{t.path}</span>
+                                <span class="alias">
+                                    {t.lightSource && `light: ${t.lightSource}`}
+                                    {t.lightSource && t.darkSource && " · "}
+                                    {t.darkSource && `dark: ${t.darkSource}`}
+                                </span>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+        ))
+    }
+</div>
+
+<style>
+    .semantic,
+    .semantic * {
+        margin: 0;
+    }
+    .semantic {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .group h3 {
+        margin: 0 0 0.5rem 0;
+        text-transform: capitalize;
+    }
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .row {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .swatch-pair {
+        display: flex;
+        gap: 2px;
+        border: 1px solid rgba(127, 127, 127, 0.2);
+        border-radius: 0.25rem;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .swatch {
+        width: 2rem;
+        height: 2rem;
+    }
+    .meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+    }
+    .name,
+    .alias {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    .alias {
+        font-size: 0.7rem;
+        opacity: 0.7;
+    }
+</style>

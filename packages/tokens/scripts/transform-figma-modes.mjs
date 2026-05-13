@@ -8,7 +8,7 @@
 //    `{primitives.blue-brand.500}`. Keys under `$value` and `$extensions` are preserved
 //    verbatim since those positions hold data, not token paths.
 
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
