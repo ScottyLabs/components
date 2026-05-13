@@ -23,6 +23,7 @@ build/
 .svelte-kit/
 .astro/
 storybook-static/
+*.generated.json
 
 # OS
 .DS_Store

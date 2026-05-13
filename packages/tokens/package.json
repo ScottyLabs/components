@@ -22,11 +22,12 @@
         "./css/dark": "./dist/tokens.dark.css"
     },
     "scripts": {
-        "build": "terrazzo build && tsdown",
-        "build:tokens": "terrazzo build",
+        "build": "bun run prebuild && terrazzo build && tsdown",
+        "prebuild": "node ./scripts/transform-figma-modes.mjs",
+        "build:tokens": "bun run prebuild && terrazzo build",
         "build:ts": "tsdown",
         "typecheck": "tsc --noEmit",
-        "dev": "terrazzo build --watch"
+        "dev": "bun run prebuild && terrazzo build --watch"
     },
     "devDependencies": {
         "@terrazzo/cli": "^2.1.0",

@@ -4,7 +4,7 @@ import js from "@terrazzo/plugin-js";
 
 export default defineConfig({
     tokens: [
-        "./figma-export.json",
+        "./tokens/colors.generated.json",
         "./tokens/typography.json",
         "./tokens/radius.json",
         "./tokens/spacing.json",
