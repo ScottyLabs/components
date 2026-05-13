@@ -1,6 +1,6 @@
 {
     "Elevation": {
         "Dropdown": { "$type": "shadow", "$value": "{Shadow.S}" },
-        "Card":     { "$type": "shadow", "$value": "{Shadow.M}" }
+        "Card": { "$type": "shadow", "$value": "{Shadow.M}" }
     }
 }
