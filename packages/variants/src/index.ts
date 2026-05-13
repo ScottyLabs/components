@@ -1,3 +1,1 @@
-import { createTV } from "tailwind-variants";
-
-export const tv = createTV({ twMerge: false });
+export { button, type ButtonVariants } from "./button.js";

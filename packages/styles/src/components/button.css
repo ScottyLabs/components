@@ -1,0 +1,206 @@
+@layer components {
+    .sl-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--sl-spacing-6);
+        border-radius: var(--sl-radius-full);
+        border: var(--sl-border-width-default) solid transparent;
+        font-family: var(--sl-typography-label-large-font-family);
+        font-weight: var(--sl-typography-label-large-font-weight);
+        font-size: var(--sl-typography-label-large-font-size);
+        line-height: var(--sl-typography-label-large-line-height);
+        background-color: transparent;
+        cursor: pointer;
+        transition:
+            background-color 150ms ease,
+            color 150ms ease,
+            border-color 150ms ease;
+    }
+
+    .sl-btn:disabled {
+        cursor: not-allowed;
+    }
+
+    /* Sizes */
+    .sl-btn--md {
+        padding: var(--sl-spacing-8) var(--sl-spacing-16);
+    }
+
+    .sl-btn--lg {
+        padding: var(--sl-spacing-14) var(--sl-spacing-20);
+        gap: var(--sl-spacing-8);
+    }
+
+    /* Filled — Brand */
+    .sl-btn--filled.sl-btn--brand {
+        background-color: var(--sl-color-background-brand-primary-enabled);
+        color: var(--sl-color-foreground-brand-on-brand-primary);
+    }
+    .sl-btn--filled.sl-btn--brand:hover:not(:disabled) {
+        background-color: var(--sl-color-background-brand-primary-hover);
+    }
+    .sl-btn--filled.sl-btn--brand:active:not(:disabled) {
+        background-color: var(--sl-color-background-brand-primary-pressed);
+    }
+    .sl-btn--filled.sl-btn--brand:disabled {
+        background-color: var(--sl-color-background-disabled-brand);
+        color: var(--sl-color-foreground-disabled-brand);
+    }
+
+    /* Filled — Neutral (uses Inverse background, On Inverse foreground) */
+    .sl-btn--filled.sl-btn--neutral {
+        background-color: var(--sl-color-background-neutral-inverse-enabled);
+        color: var(--sl-color-foreground-neutral-on-inverse);
+    }
+    .sl-btn--filled.sl-btn--neutral:hover:not(:disabled) {
+        background-color: var(--sl-color-background-neutral-inverse-hover);
+    }
+    .sl-btn--filled.sl-btn--neutral:active:not(:disabled) {
+        background-color: var(--sl-color-background-neutral-inverse-pressed);
+    }
+    .sl-btn--filled.sl-btn--neutral:disabled {
+        background-color: var(--sl-color-background-disabled-neutral);
+        color: var(--sl-color-foreground-disabled-neutral);
+    }
+
+    /* Filled — brandNeutral (no brandNeutral primary exists; uses Secondary token) */
+    .sl-btn--filled.sl-btn--brand-neutral {
+        background-color: var(--sl-color-background-brand-neutral-secondary-enabled);
+        color: var(--sl-color-foreground-brand-neutral-primary);
+    }
+    .sl-btn--filled.sl-btn--brand-neutral:hover:not(:disabled) {
+        background-color: var(--sl-color-background-brand-neutral-secondary-hover);
+    }
+    .sl-btn--filled.sl-btn--brand-neutral:active:not(:disabled) {
+        background-color: var(--sl-color-background-brand-neutral-secondary-pressed);
+    }
+    .sl-btn--filled.sl-btn--brand-neutral:disabled {
+        background-color: var(--sl-color-background-disabled-brand-neutral);
+        color: var(--sl-color-foreground-disabled-brand-neutral);
+    }
+
+    /* Tonal — Brand */
+    .sl-btn--tonal.sl-btn--brand {
+        background-color: var(--sl-color-background-brand-secondary-enabled);
+        color: var(--sl-color-foreground-brand-primary);
+    }
+    .sl-btn--tonal.sl-btn--brand:hover:not(:disabled) {
+        background-color: var(--sl-color-background-brand-secondary-hover);
+    }
+    .sl-btn--tonal.sl-btn--brand:active:not(:disabled) {
+        background-color: var(--sl-color-background-brand-secondary-pressed);
+    }
+    .sl-btn--tonal.sl-btn--brand:disabled {
+        background-color: var(--sl-color-background-disabled-brand);
+        color: var(--sl-color-foreground-disabled-brand);
+    }
+
+    /* Tonal — Neutral */
+    .sl-btn--tonal.sl-btn--neutral {
+        background-color: var(--sl-color-background-neutral-secondary-enabled);
+        color: var(--sl-color-foreground-neutral-primary);
+    }
+    .sl-btn--tonal.sl-btn--neutral:hover:not(:disabled) {
+        background-color: var(--sl-color-background-neutral-secondary-hover);
+    }
+    .sl-btn--tonal.sl-btn--neutral:active:not(:disabled) {
+        background-color: var(--sl-color-background-neutral-secondary-pressed);
+    }
+    .sl-btn--tonal.sl-btn--neutral:disabled {
+        background-color: var(--sl-color-background-disabled-neutral);
+        color: var(--sl-color-foreground-disabled-neutral);
+    }
+
+    /* Tonal — brandNeutral */
+    .sl-btn--tonal.sl-btn--brand-neutral {
+        background-color: var(--sl-color-background-brand-neutral-secondary-enabled);
+        color: var(--sl-color-foreground-brand-neutral-primary);
+    }
+    .sl-btn--tonal.sl-btn--brand-neutral:hover:not(:disabled) {
+        background-color: var(--sl-color-background-brand-neutral-secondary-hover);
+    }
+    .sl-btn--tonal.sl-btn--brand-neutral:active:not(:disabled) {
+        background-color: var(--sl-color-background-brand-neutral-secondary-pressed);
+    }
+    .sl-btn--tonal.sl-btn--brand-neutral:disabled {
+        background-color: var(--sl-color-background-disabled-brand-neutral);
+        color: var(--sl-color-foreground-disabled-brand-neutral);
+    }
+
+    /* Outline (transparent background, colored border + text) */
+    .sl-btn--outline {
+        background-color: transparent;
+    }
+    .sl-btn--outline.sl-btn--neutral {
+        border-color: var(--sl-color-stroke-neutral-1);
+        color: var(--sl-color-foreground-neutral-primary);
+    }
+    .sl-btn--outline.sl-btn--neutral:hover:not(:disabled) {
+        background-color: var(--sl-color-background-neutral-subtle-hover);
+    }
+    .sl-btn--outline.sl-btn--neutral:active:not(:disabled) {
+        background-color: var(--sl-color-background-neutral-subtle-pressed);
+    }
+    .sl-btn--outline.sl-btn--brand {
+        border-color: var(--sl-color-stroke-brand-1);
+        color: var(--sl-color-foreground-brand-primary);
+    }
+    .sl-btn--outline.sl-btn--brand:hover:not(:disabled) {
+        background-color: var(--sl-color-background-brand-secondary-enabled);
+    }
+    .sl-btn--outline.sl-btn--brand:active:not(:disabled) {
+        background-color: var(--sl-color-background-brand-secondary-pressed);
+    }
+    .sl-btn--outline.sl-btn--brand-neutral {
+        border-color: var(--sl-color-stroke-brand-neutral-1);
+        color: var(--sl-color-foreground-brand-neutral-primary);
+    }
+    .sl-btn--outline.sl-btn--brand-neutral:hover:not(:disabled) {
+        background-color: var(--sl-color-background-brand-neutral-subtle-hover);
+    }
+    .sl-btn--outline.sl-btn--brand-neutral:active:not(:disabled) {
+        background-color: var(--sl-color-background-brand-neutral-subtle-pressed);
+    }
+    .sl-btn--outline:disabled {
+        border-color: var(--sl-color-stroke-neutral-2);
+        color: var(--sl-color-foreground-disabled-neutral);
+        background-color: transparent;
+    }
+
+    /* Subtle (transparent at rest, surface fills on hover) */
+    .sl-btn--subtle {
+        background-color: transparent;
+    }
+    .sl-btn--subtle.sl-btn--neutral {
+        color: var(--sl-color-foreground-neutral-primary);
+    }
+    .sl-btn--subtle.sl-btn--neutral:hover:not(:disabled) {
+        background-color: var(--sl-color-background-neutral-subtle-hover);
+    }
+    .sl-btn--subtle.sl-btn--neutral:active:not(:disabled) {
+        background-color: var(--sl-color-background-neutral-subtle-pressed);
+    }
+    .sl-btn--subtle.sl-btn--brand {
+        color: var(--sl-color-foreground-brand-primary);
+    }
+    .sl-btn--subtle.sl-btn--brand:hover:not(:disabled) {
+        background-color: var(--sl-color-background-brand-secondary-enabled);
+    }
+    .sl-btn--subtle.sl-btn--brand:active:not(:disabled) {
+        background-color: var(--sl-color-background-brand-secondary-pressed);
+    }
+    .sl-btn--subtle.sl-btn--brand-neutral {
+        color: var(--sl-color-foreground-brand-neutral-primary);
+    }
+    .sl-btn--subtle.sl-btn--brand-neutral:hover:not(:disabled) {
+        background-color: var(--sl-color-background-brand-neutral-subtle-hover);
+    }
+    .sl-btn--subtle.sl-btn--brand-neutral:active:not(:disabled) {
+        background-color: var(--sl-color-background-brand-neutral-subtle-pressed);
+    }
+    .sl-btn--subtle:disabled {
+        color: var(--sl-color-foreground-disabled-neutral);
+        background-color: transparent;
+    }
+}

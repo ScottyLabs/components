@@ -1,3 +1,1 @@
-// Components are re-exported from here once added.
-// See ../react for the React counterparts.
-export {};
+export { default as Button } from "./components/Button/Button.svelte";

@@ -28,7 +28,7 @@
         }
     },
     "scripts": {
-        "build": "svelte-package",
+        "build": "svelte-package -i src -o dist",
         "typecheck": "svelte-check --tsconfig ./tsconfig.json",
         "dev": "svelte-package --watch"
     },
