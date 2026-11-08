@@ -1,0 +1,24 @@
+{
+  "nodeModulesDir": "auto",
+  "workspace": [
+    "./packages/tokens",
+    "./packages/styles",
+    "./packages/types",
+    "./packages/variants",
+    "./packages/react",
+    "./packages/svelte",
+    "./apps/docs",
+    "./apps/storybook",
+    "./apps/storybook-react",
+    "./apps/storybook-svelte"
+  ],
+  "tasks": {
+    "build": "deno task --cwd packages/tokens build && deno task --cwd packages/styles build && deno task --cwd packages/types build && deno task --cwd packages/variants build && deno task --cwd packages/react build && deno task --cwd packages/svelte build",
+    "build:docs": "deno task build && deno task --cwd apps/docs build",
+    "build:storybook": "deno task --cwd apps/storybook build",
+    "build:storybook-react": "deno task build && deno task --cwd apps/storybook-react build",
+    "build:storybook-svelte": "deno task build && deno task --cwd apps/storybook-svelte build",
+    "typecheck": "deno task build && deno task --members typecheck"
+  },
+  "exclude": [".scottylabs", "**/dist", "**/storybook-static", "**/.astro", "**/.svelte-kit"]
+}

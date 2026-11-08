@@ -4,7 +4,7 @@ export type ButtonVariant = "filled" | "tonal" | "outline" | "subtle";
 export type ButtonSize = "medium" | "large";
 
 export interface ButtonVariantProps {
-    intent?: Intent;
-    variant?: ButtonVariant;
-    size?: ButtonSize;
+  intent?: Intent;
+  variant?: ButtonVariant;
+  size?: ButtonSize;
 }

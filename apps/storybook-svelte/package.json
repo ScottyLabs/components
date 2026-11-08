@@ -1,31 +1,31 @@
 {
-    "name": "@scottylabs/storybook-svelte",
-    "version": "0.0.0",
-    "private": true,
-    "description": "Svelte Storybook for the ScottyLabs component library.",
-    "license": "(MIT OR Apache-2.0)",
-    "type": "module",
-    "scripts": {
-        "dev": "storybook dev -p 6008 --disable-telemetry",
-        "build": "storybook build --output-dir storybook-static",
-        "typecheck": "svelte-check --tsconfig ./tsconfig.json"
-    },
-    "dependencies": {
-        "@scottylabs/styles": "workspace:*",
-        "@scottylabs/svelte": "workspace:*",
-        "@scottylabs/tokens": "workspace:*"
-    },
-    "devDependencies": {
-        "@storybook/addon-a11y": "^10.3.0",
-        "@storybook/addon-svelte-csf": "^5.1.0",
-        "@storybook/svelte": "^10.3.0",
-        "@storybook/svelte-vite": "^10.3.0",
-        "@sveltejs/vite-plugin-svelte": "^5.0.0",
-        "bits-ui": "^2.0.0",
-        "storybook": "^10.3.0",
-        "svelte": "^5.0.0",
-        "svelte-check": "^4.0.0",
-        "typescript": "^5.6.3",
-        "vite": "^6.0.0"
-    }
+  "name": "@scottylabs/storybook-svelte",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Svelte Storybook for the ScottyLabs component library.",
+  "license": "(MIT OR Apache-2.0)",
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6008 --disable-telemetry",
+    "build": "storybook build --output-dir storybook-static",
+    "typecheck": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "@scottylabs/styles": "workspace:*",
+    "@scottylabs/svelte": "workspace:*",
+    "@scottylabs/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.3.0",
+    "@storybook/addon-svelte-csf": "^5.1.0",
+    "@storybook/svelte": "^10.3.0",
+    "@storybook/svelte-vite": "^10.3.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "bits-ui": "^2.0.0",
+    "storybook": "^10.3.0",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
+  }
 }

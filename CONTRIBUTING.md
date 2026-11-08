@@ -2,19 +2,18 @@
 
 ## Dev environment
 
-This repo uses [devenv](https://devenv.sh/) via ScottyLabs' [shared devenv module](https://codeberg.org/ScottyLabs/devenv). With [direnv](https://direnv.net/) configured:
+Install [Lix](https://lix.systems/install/) with `curl -sSf -L https://install.lix.systems/lix | sh -s -- install`, then log in with `nix run git+https://git.cmu.dev/ScottyLabs/kennel#login` and enter the dev shell with `nix develop`. The shell provides Deno and the rest of the toolchain and installs the workspace dependencies.
 
 ```sh
-direnv allow                # one-time per checkout
-bun install                 # installs deps and regenerates bun.nix via postinstall
-bun run typecheck           # type-check the workspace
+deno task build             # build every package
+deno task typecheck         # type-check the workspace
+pitchfork start --local     # serve the docs and the three Storybooks
+pitchfork stop --local
 ```
-
-The first `direnv allow` will trigger Nix to set up Bun and the rest of the toolchain.
 
 ## Code style
 
-Linting and formatting are handled by `oxlint` and `oxfmt`, configured declaratively in the shared devenv module. Pre-commit hooks (installed automatically by devenv) run both on every commit. No project-local `.oxlintrc.json` or `oxfmt.toml` exists or should be added. Adjust the upstream devenv module if defaults need to change.
+Linting and formatting are handled by `oxlint` and `oxfmt`, configured declaratively in the kennel flake module. Pre-commit hooks (installed automatically by `nix develop`) run both on every commit. No project-local `.oxlintrc.json` or `oxfmt.toml` exists or should be added. Adjust the kennel module if defaults need to change.
 
 Commits must follow [Conventional Commits](https://www.conventionalcommits.org/) (enforced by a `commitizen` git hook).
 
@@ -34,31 +33,25 @@ Tokens are derived from `figma-export.json` (DTCG export from Tokenhaus) plus ha
 
 1. In Figma, open the Tokenhaus plugin, then Export, then DTCG JSON (Figma Import), then All Collections.
 1. Replace `packages/tokens/figma-export.json`.
-1. `bun run --filter '@scottylabs/tokens' build` to regenerate CSS variables.
+1. `deno task --cwd packages/tokens build` to regenerate CSS variables.
 1. Visually inspect Storybook for any token-driven regressions.
 
 ## Nix and reproducible builds
 
-[`bun2nix`](https://github.com/nix-community/bun2nix) generates `bun.nix` from `bun.lock` so kennel can produce reproducible Bun-based static-site builds. `bun.nix` is committed to the repo. A `postinstall` script regenerates it whenever `bun install` runs:
-
-```json
-"scripts": { "postinstall": "bun2nix -o bun.nix" }
-```
-
-If you change `package.json` dependencies, commit the updated `bun.nix` alongside.
+Kennel builds each site offline from `deno.lock`, so commit the updated `deno.lock` alongside any `package.json` dependency change.
 
 ## Releases
 
 Versioning uses [Changesets](https://github.com/changesets/changesets) in lockstep mode, so all packages bump together.
 
 ```sh
-bun run changeset          # interactively add a changeset entry to a PR
-bun run version            # bump versions and update changelogs (run on main)
-bun run release            # build and publish to npm
+deno task changeset        # interactively add a changeset entry to a PR
+deno task version          # bump versions and update changelogs (run on main)
+deno task release          # build and publish to npm
 ```
 
 ## Repository
 
-Deployments are handled in [kennel](https://codeberg.org/ScottyLabs/kennel), declared in `devenv.nix` under `scottylabs.kennel.sites`.
+Deployments are handled in [kennel](https://git.cmu.dev/ScottyLabs/kennel), declared in `flake.nix` under `sites`.
 
-Changes to repository visibility or deployment topology need a separate PR against the [governance repo](https://codeberg.org/ScottyLabs/governance) under the `uia` team.
+Changes to repository visibility or deployment topology need a separate PR against the [governance repo](https://git.cmu.dev/ScottyLabs/governance) under the `uia` team.

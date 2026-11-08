@@ -1,30 +1,30 @@
 {
-    "name": "@scottylabs/storybook-react",
-    "version": "0.0.0",
-    "private": true,
-    "description": "React Storybook for the ScottyLabs component library.",
-    "license": "(MIT OR Apache-2.0)",
-    "type": "module",
-    "scripts": {
-        "dev": "storybook dev -p 6007 --disable-telemetry",
-        "build": "storybook build --output-dir storybook-static",
-        "typecheck": "tsc --noEmit"
-    },
-    "dependencies": {
-        "@scottylabs/react": "workspace:*",
-        "@scottylabs/styles": "workspace:*",
-        "@scottylabs/tokens": "workspace:*"
-    },
-    "devDependencies": {
-        "@storybook/addon-a11y": "^10.3.0",
-        "@storybook/react": "^10.3.0",
-        "@storybook/react-vite": "^10.3.0",
-        "@types/react": "^19.0.0",
-        "@types/react-dom": "^19.0.0",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "storybook": "^10.3.0",
-        "typescript": "^5.6.3",
-        "vite": "^6.0.0"
-    }
+  "name": "@scottylabs/storybook-react",
+  "version": "0.0.0",
+  "private": true,
+  "description": "React Storybook for the ScottyLabs component library.",
+  "license": "(MIT OR Apache-2.0)",
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6007 --disable-telemetry",
+    "build": "storybook build --output-dir storybook-static",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@scottylabs/react": "workspace:*",
+    "@scottylabs/styles": "workspace:*",
+    "@scottylabs/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.3.0",
+    "@storybook/react": "^10.3.0",
+    "@storybook/react-vite": "^10.3.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "storybook": "^10.3.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
+  }
 }

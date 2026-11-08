@@ -1,24 +1,24 @@
 {
-    "shadow": {
-        "s": {
-            "$type": "shadow",
-            "$value": {
-                "color": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.25 },
-                "offsetX": { "value": 0, "unit": "px" },
-                "offsetY": { "value": 2, "unit": "px" },
-                "blur": { "value": 3, "unit": "px" },
-                "spread": { "value": 0, "unit": "px" }
-            }
-        },
-        "m": {
-            "$type": "shadow",
-            "$value": {
-                "color": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.2 },
-                "offsetX": { "value": 0, "unit": "px" },
-                "offsetY": { "value": 2, "unit": "px" },
-                "blur": { "value": 6, "unit": "px" },
-                "spread": { "value": 0, "unit": "px" }
-            }
-        }
+  "shadow": {
+    "s": {
+      "$type": "shadow",
+      "$value": {
+        "color": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.25 },
+        "offsetX": { "value": 0, "unit": "px" },
+        "offsetY": { "value": 2, "unit": "px" },
+        "blur": { "value": 3, "unit": "px" },
+        "spread": { "value": 0, "unit": "px" }
+      }
+    },
+    "m": {
+      "$type": "shadow",
+      "$value": {
+        "color": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.2 },
+        "offsetX": { "value": 0, "unit": "px" },
+        "offsetY": { "value": 2, "unit": "px" },
+        "blur": { "value": 6, "unit": "px" },
+        "spread": { "value": 0, "unit": "px" }
+      }
     }
+  }
 }

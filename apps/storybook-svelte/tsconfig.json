@@ -1,4 +1,4 @@
 {
-    "extends": "../../tsconfig.json",
-    "include": [".storybook/**/*.ts", "src/**/*.ts", "src/**/*.svelte"]
+  "extends": "../../tsconfig.json",
+  "include": [".storybook/**/*.ts", "src/**/*.ts", "src/**/*.svelte"]
 }

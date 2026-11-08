@@ -1,12 +1,7 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-        "rootDir": "./src",
-        "outDir": "./dist",
-        "noEmit": false,
-        "declaration": true,
-        "declarationMap": true,
-        "emitDeclarationOnly": false
-    },
-    "include": ["src/**/*.ts"]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "include": ["scripts/**/*.ts", "terrazzo.config.ts"]
 }

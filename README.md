@@ -17,6 +17,6 @@ Four apps cover the publication surface:
 - `apps/storybook` is a Storybook composition host that pulls in the framework-specific Storybooks via `refs`
 - `apps/storybook-react` and `apps/storybook-svelte` are those framework-specific Storybooks
 
-The dev environment is `devenv` via ScottyLabs' [shared module](https://codeberg.org/ScottyLabs/devenv), and deployment runs through [kennel](https://codeberg.org/ScottyLabs/kennel) with site declarations in `devenv.nix`. See [CONTRIBUTING.md](./CONTRIBUTING.md) for setup.
+The dev environment comes from the ScottyLabs [kennel](https://git.cmu.dev/ScottyLabs/kennel) flake module, and kennel deploys the sites declared in `flake.nix`. See [CONTRIBUTING.md](./CONTRIBUTING.md) for setup.
 
 This project is dual-licensed under [MIT](./LICENSE-MIT) or [Apache-2.0](./LICENSE-APACHE-2.0) at your option.

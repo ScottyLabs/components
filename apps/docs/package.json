@@ -1,21 +1,21 @@
 {
-    "name": "@scottylabs/docs",
-    "version": "0.0.0",
-    "private": true,
-    "description": "Documentation site for the ScottyLabs component library, built with Astro Starlight.",
-    "license": "(MIT OR Apache-2.0)",
-    "type": "module",
-    "scripts": {
-        "dev": "astro dev --port 4321",
-        "build": "astro build",
-        "preview": "astro preview",
-        "typecheck": "astro check"
-    },
-    "dependencies": {
-        "@astrojs/check": "^0.9.9",
-        "@astrojs/starlight": "^0.39.0",
-        "@scottylabs/tokens": "workspace:*",
-        "astro": "^6.3.0",
-        "typescript": "^5.6.3"
-    }
+  "name": "@scottylabs/docs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Documentation site for the ScottyLabs component library, built with Astro Starlight.",
+  "license": "(MIT OR Apache-2.0)",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --port 4321",
+    "build": "astro build",
+    "preview": "astro preview",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/starlight": "^0.39.0",
+    "@scottylabs/tokens": "workspace:*",
+    "astro": "^6.3.0",
+    "typescript": "^5.6.3"
+  }
 }

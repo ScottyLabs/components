@@ -1,5 +1,5 @@
 {
-    "border-width": {
-        "default": { "$type": "dimension", "$value": { "value": 1, "unit": "px" } }
-    }
+  "border-width": {
+    "default": { "$type": "dimension", "$value": { "value": 1, "unit": "px" } }
+  }
 }

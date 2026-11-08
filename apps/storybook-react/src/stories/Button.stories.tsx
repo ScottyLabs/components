@@ -2,16 +2,16 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "@scottylabs/react";
 
 const meta = {
-    title: "Components/Button",
-    component: Button,
-    parameters: { layout: "centered" },
-    args: { children: "Button" },
-    argTypes: {
-        intent: { control: "inline-radio", options: ["neutral", "brand", "brandNeutral"] },
-        variant: { control: "inline-radio", options: ["filled", "tonal", "outline", "subtle"] },
-        size: { control: "inline-radio", options: ["medium", "large"] },
-        disabled: { control: "boolean" },
-    },
+  title: "Components/Button",
+  component: Button,
+  parameters: { layout: "centered" },
+  args: { children: "Button" },
+  argTypes: {
+    intent: { control: "inline-radio", options: ["neutral", "brand", "brandNeutral"] },
+    variant: { control: "inline-radio", options: ["filled", "tonal", "outline", "subtle"] },
+    size: { control: "inline-radio", options: ["medium", "large"] },
+    disabled: { control: "boolean" },
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;

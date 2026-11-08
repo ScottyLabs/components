@@ -1,44 +1,45 @@
 {
-    "name": "@scottylabs/react",
-    "version": "0.0.0",
-    "description": "React components for the ScottyLabs design system. Built on Radix UI primitives.",
-    "license": "(MIT OR Apache-2.0)",
-    "files": [
-        "dist",
-        "src"
-    ],
-    "type": "module",
-    "main": "./dist/index.mjs",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.mts",
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.mts",
-            "import": "./dist/index.mjs"
-        }
-    },
-    "scripts": {
-        "build": "tsdown",
-        "typecheck": "tsc --noEmit",
-        "dev": "tsdown --watch"
-    },
-    "dependencies": {
-        "@scottylabs/types": "workspace:*",
-        "@scottylabs/variants": "workspace:*"
-    },
-    "devDependencies": {
-        "@types/react": "^19.0.0",
-        "@types/react-dom": "^19.0.0",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "tsdown": "^0.22.0",
-        "typescript": "^5.6.3"
-    },
-    "peerDependencies": {
-        "@radix-ui/react-slot": "^1.1.0",
-        "@scottylabs/styles": "workspace:*",
-        "@scottylabs/tokens": "workspace:*",
-        "react": "^18.0.0 || ^19.0.0",
-        "react-dom": "^18.0.0 || ^19.0.0"
+  "name": "@scottylabs/react",
+  "version": "0.0.0",
+  "description": "React components for the ScottyLabs design system. Built on Radix UI primitives.",
+  "license": "(MIT OR Apache-2.0)",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
     }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsdown --watch"
+  },
+  "dependencies": {
+    "@scottylabs/types": "workspace:*",
+    "@scottylabs/variants": "workspace:*"
+  },
+  "devDependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsdown": "^0.23.0",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "@scottylabs/styles": "workspace:*",
+    "@scottylabs/tokens": "workspace:*",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  }
 }

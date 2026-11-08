@@ -1,21 +1,10 @@
-# Nix / devenv
-.devenv/
-.devenv.flake.nix
+# Nix
 .pre-commit-config.yaml
 result
 result-*
 
-# AI
-.mcp.json
-.claude
-
-# direnv
-.direnv/
-.envrc.local
-
-# Node / Bun
+# Node / Deno
 node_modules/
-.bun/
 
 # Build outputs
 dist/

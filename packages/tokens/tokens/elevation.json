@@ -1,6 +1,6 @@
 {
-    "elevation": {
-        "dropdown": { "$type": "shadow", "$value": "{shadow.s}" },
-        "card": { "$type": "shadow", "$value": "{shadow.m}" }
-    }
+  "elevation": {
+    "dropdown": { "$type": "shadow", "$value": "{shadow.s}" },
+    "card": { "$type": "shadow", "$value": "{shadow.m}" }
+  }
 }

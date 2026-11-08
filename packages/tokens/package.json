@@ -1,41 +1,42 @@
 {
-    "name": "@scottylabs/tokens",
-    "version": "0.0.0",
-    "description": "Design tokens for the ScottyLabs component library. Generated from Figma via Terrazzo. CSS custom properties + TypeScript constants with Light/Dark mode support.",
-    "license": "(MIT OR Apache-2.0)",
-    "files": [
-        "dist",
-        "tokens",
-        "scripts"
-    ],
-    "type": "module",
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./dist/index.js"
-        },
-        "./css": "./dist/tokens.css",
-        "./dtcg/colors": "./tokens/colors.generated.json",
-        "./dtcg/typography": "./tokens/typography.json",
-        "./dtcg/radius": "./tokens/radius.json",
-        "./dtcg/spacing": "./tokens/spacing.json",
-        "./dtcg/stroke": "./tokens/stroke.json",
-        "./dtcg/shadow": "./tokens/shadow.json",
-        "./dtcg/elevation": "./tokens/elevation.json"
+  "name": "@scottylabs/tokens",
+  "version": "0.0.0",
+  "description": "Design tokens for the ScottyLabs component library. Generated from Figma via Terrazzo. CSS custom properties + TypeScript constants with Light/Dark mode support.",
+  "license": "(MIT OR Apache-2.0)",
+  "files": [
+    "dist",
+    "tokens",
+    "scripts"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     },
-    "scripts": {
-        "prebuild": "node ./scripts/transform-figma-modes.mjs",
-        "build": "bun run prebuild && terrazzo build",
-        "typecheck": "tsc --noEmit",
-        "dev": "bun run prebuild && terrazzo build --watch"
-    },
-    "devDependencies": {
-        "@terrazzo/cli": "^2.1.0",
-        "@terrazzo/plugin-css": "^2.1.0",
-        "@terrazzo/plugin-js": "^2.1.0",
-        "typescript": "^5.6.3"
-    }
+    "./css": "./dist/tokens.css",
+    "./dtcg/colors": "./tokens/colors.generated.json",
+    "./dtcg/typography": "./tokens/typography.json",
+    "./dtcg/radius": "./tokens/radius.json",
+    "./dtcg/spacing": "./tokens/spacing.json",
+    "./dtcg/stroke": "./tokens/stroke.json",
+    "./dtcg/shadow": "./tokens/shadow.json",
+    "./dtcg/elevation": "./tokens/elevation.json"
+  },
+  "scripts": {
+    "prebuild": "deno run -A ./scripts/transform-figma-modes.ts",
+    "build": "terrazzo build",
+    "typecheck": "tsc --noEmit",
+    "dev": "deno task prebuild && terrazzo build --watch"
+  },
+  "devDependencies": {
+    "@terrazzo/cli": "^2.1.0",
+    "@terrazzo/plugin-css": "^2.1.0",
+    "@terrazzo/plugin-js": "^2.1.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.3"
+  }
 }
