@@ -2,7 +2,15 @@
 
 ## Dev environment
 
-Install [Lix](https://lix.systems/install/) with `curl -sSf -L https://install.lix.systems/lix | sh -s -- install`, then log in with `nix run git+https://git.cmu.dev/ScottyLabs/kennel#login` and enter the dev shell with `nix develop`. The shell provides Deno and the rest of the toolchain and installs the workspace dependencies.
+Install [Lix](https://lix.systems/install/) with the ScottyLabs binary cache:
+
+```sh
+curl -sSf -L https://install.lix.systems/lix | sh -s -- install \
+  --extra-conf "extra-substituters = https://scottylabs.cachix.org" \
+  --extra-conf "extra-trusted-public-keys = scottylabs.cachix.org-1:hajjEX5SLi/Y7yYloiXTt2IOr3towcTGRhMh1vu6Tjg="
+```
+
+Then log in with `nix run git+https://git.cmu.dev/ScottyLabs/kennel#login` and enter the dev shell with `nix develop`. The shell provides Deno and the rest of the toolchain and installs the workspace dependencies.
 
 ```sh
 deno task build             # build every package
