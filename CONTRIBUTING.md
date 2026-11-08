@@ -2,7 +2,7 @@
 
 ## Dev environment
 
-Install Lix by following kennel's [local development guide](https://docs.kennel.scottylabs.org/guides/local-development.html#installing-nix), then enter the dev shell with `nix develop`. The shell provides Deno and the rest of the toolchain and installs the workspace dependencies.
+Install Lix by following kennel's [local development guide](https://docs.kennel.scottylabs.org/guides/local-development/#installing-nix), then enter the dev shell with `nix develop`. The shell provides Deno and the rest of the toolchain and installs the workspace dependencies.
 
 ```sh
 deno task build             # build every package
@@ -12,7 +12,7 @@ pitchfork start --local     # serve the docs and the three Storybooks
 
 ## Code style
 
-Linting and formatting are handled by `oxlint` and `oxfmt`, configured declaratively in the kennel flake module and run by kennel's [git hooks](https://docs.kennel.scottylabs.org/guides/local-development.html#git-hooks). No project-local `.oxlintrc.json` or `oxfmt.toml` exists or should be added. Adjust the kennel module if defaults need to change.
+Linting and formatting are handled by `oxlint` and `oxfmt`, configured declaratively in the kennel flake module and run by kennel's [git hooks](https://docs.kennel.scottylabs.org/guides/local-development/#git-hooks). No project-local `.oxlintrc.json` or `oxfmt.toml` exists or should be added. Adjust the kennel module if defaults need to change.
 
 ## Adding a component
 
@@ -49,6 +49,6 @@ deno task release          # build and publish to npm
 
 ## Repository
 
-Deployments are handled by [kennel](https://docs.kennel.scottylabs.org/guides/deploying.html), declared in `flake.nix` under `sites`.
+Deployments are handled by [kennel](https://docs.kennel.scottylabs.org/guides/deploying/), declared in `flake.nix` under `sites`.
 
 Changes to repository visibility or deployment topology need a separate PR against the [governance repo](https://git.cmu.dev/ScottyLabs/governance) under the `uia` team.
