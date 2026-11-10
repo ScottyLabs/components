@@ -1,7 +1,6 @@
 // Transforms the Tokenhaus DTCG export into the shape Terrazzo 2.x expects:
 //
-// 1. Modes inline as `$value: { Light: ..., Dark: ... }` become DTCG `$extensions.mode.<mode>`
-//    with the default mode (Light) in `$value`.
+// 1. Modes inline as `$value: { Light: ..., Dark: ... }` become DTCG `$extensions.mode.<mode>` with the default mode (Light) in `$value`.
 // 2. Hex string colors ("#0e96d1") become object form ({colorSpace, components, alpha}).
 // 3. Token paths are renamed to kebab-case to satisfy Terrazzo's core/consistent-naming rule,
 //    including alias references like `{Primitives.Blue (Brand).500}` ->
